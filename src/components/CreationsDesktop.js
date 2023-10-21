@@ -1,22 +1,22 @@
 import React from 'react'
 import data from '../dataDesktop.js'
 
-const CreationsDesktop  = () => {
+const CreationsDesktop = () => {
 
     const [cards, setCards] = React.useState(data)
     return (
         <section className="creations-desktop">
             <div className="title">
-            <h2>Our creations</h2>
-         
-            <div className="btn-container">
-                <button className="btn">See All</button>
+                <h2>Our creations</h2>
+
+                <div className="btn-container">
+                    <button className="btn">See All</button>
                 </div>
-              </div>
-           
+            </div>
+
             <section>
                 {cards.map((cards) => {
-                    const {id,image,title} = cards
+                    const { id, image, title } = cards
                     return (
                         <article key={id}>
                             <div>
@@ -26,7 +26,7 @@ const CreationsDesktop  = () => {
                         </article>
                     )
                 })}
-            </section> 
+            </section>
         </section>
     )
 }

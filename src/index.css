@@ -78,9 +78,16 @@ cursor:pointer;
   bottom: 0;
   left: 0;
   background-color: black;
+  color:whitesmoke;
   min-height: 100vh;
 }
 
+.header nav a {
+  color: whitesmoke;
+  font-family: 'Alata';
+  font-size: 15px;
+  text-decoration: none;
+}
 
 .header .menu-btn {
   padding:20px;
